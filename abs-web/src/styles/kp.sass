@@ -1,0 +1,135 @@
+.kp-container
+  display: flex
+  flex-flow: column
+
+  .tags
+    margin-bottom: 0
+
+    .tag
+      margin-bottom: 0
+
+  &__title
+    margin: 40px 0 10px 0 !important
+
+  &__modifiers
+    display: flex
+    margin: 5px 0
+
+    .tags
+      margin: 0 20px 0 0
+
+    &__checkbox
+      .is-active
+        background-color: $blue
+        color: $white
+
+    &__checkitem
+      margin: 0 7px
+      cursor: pointer
+
+      &:hover
+        background-color: $blue
+        color: $white
+
+    &__number-action
+      cursor: pointer
+      background-color: $grey-lightest !important
+      color: $grey-dark !important
+
+
+  &__tab-links
+    margin: 0 !important
+
+    > ul
+      padding-inline-start: 0
+
+  &__tab
+    margin: 30px 0
+    display: flex
+    flex-wrap: wrap
+
+    .tags
+      margin: 10px
+
+      .tag
+        margin: 0
+
+    &__input-item
+      padding: 0 !important
+      margin: 0 !important
+
+      input
+        margin: 0 !important
+        padding: 0 5px !important
+        height: 100% !important
+        max-width: 50px
+
+    &__center-item
+      border-radius: 0 !important
+
+  &__validate
+    &__submit
+      padding: 3px 40px
+      font-size: 1rem
+      &:hover
+        background-color: #650b3a
+    .is-inactive
+      cursor: not-allowed
+      background-color: $white
+      &:hover
+        background-color: $white
+  &__result
+    margin-right: 20px
+  &__requested
+    display: flex
+    &__state-changer
+      margin-right: 20px
+      padding: 3px 40px
+.rhistory
+  &__items
+    display: flex
+    flex-flow: column
+  &__item
+    cursor: pointer
+    padding: 10px 0
+    border: 1px solid $grey-lightest
+    border-radius: 10px
+    box-shadow: 3px 5px 3px $grey-lightest
+    transition-duration: 0.3s
+    .delete
+      padding: 0 !important
+      margin-right: 20px !important
+      margin-left: 0 !important
+    &:hover
+      transform: translateY(-5px)
+    .level-item
+      margin: 0 3px
+      width: fit-content
+      padding: 3px 10px
+      border-radius: 5px
+    &__number
+      border-radius: 100%
+      padding: 3px 7px !important
+      margin-left: 20px !important
+  &__more
+    display: flex
+    justify-content: flex-end
+    margin: 20px 0
+    .button
+      padding: 0 40px
+@media screen and (max-width: 768px)
+  .rhistory
+    &__title
+      margin-left: 10px
+    &__item
+      .level-left
+        display: flex
+        flex-wrap: wrap
+        margin-left: 10px
+      .level-right
+        margin: 0
+        display: flex
+      .level-item
+        margin: 5px
+      &__number
+        display: none

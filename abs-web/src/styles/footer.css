@@ -1,0 +1,13 @@
+.footer {
+  padding: 40px 0 !important; }
+  .footer__github-link {
+    width: 48px; }
+  .footer .content {
+    display: flex;
+    flex-flow: row;
+    align-items: center !important;
+    justify-content: center !important; }
+    .footer .content > * {
+      margin: 0 0.5rem; }
+
+/*# sourceMappingURL=footer.css.map */

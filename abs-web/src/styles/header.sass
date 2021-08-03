@@ -1,0 +1,26 @@
+.navbar
+  .navbar-brand
+    display: flex
+    align-items: center
+    margin: 0 20px 0 40px
+    img
+      width: 2.5rem
+      max-height: none !important
+  .navbar-menu
+    .is-page
+      background-color: $blue
+      color: $white
+    .navbar-item
+      transition-duration: 0.3s
+      &:hover
+        background-color: $grey-lightest
+        color: $blue
+.header
+  box-shadow: 1px 1px 10px $grey-lightest
+  &__project-name
+    margin: 10px 10px
+    font-size: 1.2em
+
+@media screen and (max-width: 960px)
+  .navbar-brand
+    margin: 0 10px !important
